@@ -7,3 +7,7 @@
     transform: scale(1.05);
     transition-duration: .25s;
 }
+
+.contact img, .other img {
+    width: 48px;
+}
