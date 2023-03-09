@@ -1,3 +1,41 @@
+body {
+    margin: 0;
+}
+
+.banner {
+    background-image: url("images/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+}
+
+.content {
+    background-color: white;
+}
+
+.parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+}
+
+.parallax-layer {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.layer1 {
+    transform: translateZ(0px);
+}
+
+.layer2 {
+    transform: translate3d(0, -240px, -1px) scale(2.1);
+}
+
 .card {
     transform: scale(1);
     transition-duration: .25s;
