@@ -46,6 +46,18 @@ body {
     transition-duration: .25s;
 }
 
-.contact img, .other img {
+.contact img {
     width: 48px;
+}
+
+.other img {
+    width: 128px;
+    transform: scale(1);
+    transition-duration: .25s;
+}
+
+.other img:hover {
+    width: 128px;
+    transform: scale(1.10);
+    transition-duration: .25s;
 }
