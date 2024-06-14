@@ -65,7 +65,31 @@ body {
 }
 
 footer {
-    img {filter: brightness(75%);}
+    overflow: hidden;
+    position: relative;
+    color: white;
+    background-color: rgba(112, 112, 0, 0.75);
+
+    .footer-bg {
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+    }
+
+    img {filter: brightness(100%);}
     .text-start img {width: 32px;}
     .text-end img {width: 64px;}
+
+    a {
+        text-decoration: none;
+
+        img {
+            transform: scale(1);
+            transition-duration: .25s;
+        }
+        img:hover {
+            transform: scale(1.1);
+            transition-duration: .25s;
+        }
+    }
 }
