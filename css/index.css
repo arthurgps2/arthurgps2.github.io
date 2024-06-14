@@ -36,6 +36,17 @@ body {
     transform: translate3d(0, -240px, -1px) scale(2.1);
 }
 
+.links {
+    .card-img-overlay {
+        background-color:rgba(65, 128, 109, 0.6);
+        span {
+            color: white;
+            font-size: 500%;
+            font-weight: 500;
+        }
+    }
+}
+
 .card {
     transform: scale(1);
     transition-duration: .25s;
