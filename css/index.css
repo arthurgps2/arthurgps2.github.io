@@ -48,9 +48,11 @@ body {
 
 .contact img {
     width: 48px;
+    filter: brightness(50%);
 }
 
 .other img {
+    filter: brightness(50%);
     width: 128px;
     transform: scale(1);
     transition-duration: .25s;
@@ -60,4 +62,10 @@ body {
     width: 128px;
     transform: scale(1.10);
     transition-duration: .25s;
+}
+
+footer {
+    img {filter: brightness(75%);}
+    .text-start img {width: 32px;}
+    .text-end img {width: 64px;}
 }
