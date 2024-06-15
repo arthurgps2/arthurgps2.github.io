@@ -7,14 +7,8 @@ main {
     background-color: #fff;
 }
 
-@keyframes parallax {
-    to {transform: translateY(200%);}
-}
-
 header img {
     width: 100%;
-    animation: parallax linear;
-    animation-timeline: scroll();
     position: relative;
     z-index: -1
 }
