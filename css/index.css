@@ -2,38 +2,20 @@ body {
     margin: 0;
 }
 
-.banner {
-    background-image: url("/images/hero.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50%;
+main {
+    background-color: #fff;
 }
 
-.content {
-    background-color: white;
+@keyframes parallax {
+    to {transform: translateY(200%);}
 }
 
-.parallax {
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 1px;
-}
-
-.parallax-layer {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.layer1 {
-    transform: translateZ(0px);
-}
-
-.layer2 {
-    transform: translate3d(0, -240px, -1px) scale(2.1);
+header img {
+    width: 100%;
+    animation: parallax linear;
+    animation-timeline: scroll();
+    position: relative;
+    z-index: -1
 }
 
 .links {
